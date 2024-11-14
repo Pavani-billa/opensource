@@ -1,0 +1,7 @@
+t=int(input().strip())
+for _ in range(t):
+    x=int(input().strip())
+    if(x>=30):
+        print("YES")
+    else:
+        print("NO")
