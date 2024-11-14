@@ -1,0 +1,4 @@
+x,y,z=map(int,input().split())
+capacity=z-y
+max=capacity//x
+print(max)
