@@ -1,0 +1,7 @@
+n = int(input())
+rev_str = str(abs(n))[::-1]
+rev_int = int(rev_str)*(-1 if n < 0 else 1)
+if -2**31 <= rev_int <= 2**31 - 1:
+    print(rev_int)
+else:
+    print(0)
