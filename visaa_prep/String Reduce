@@ -1,0 +1,5 @@
+from itertools import groupby
+
+string=input("")
+compressed_string=''.join(char + str(len(list(group))) for char, group in groupby(string))
+print(compressed_string)
