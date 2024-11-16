@@ -1,0 +1,13 @@
+number = input().strip()
+def is_valid_number(number):
+    if number.isdigit() and len(number)==10 and sum(int(digit) for digit in number) > 0:
+        return "Correct"
+    if number.startswith("+"):
+        parts=number.split()
+        if len(parts) == 2 and parts[1].isdigit() and 10 <= len(parts[1]) <= 10:
+            country_code = parts[0][1:]
+            if country_code.isdigit() and 1 <= len(country_code) <= 2:
+                if sum(int(digit) for digit in parts[1]) > 0:
+                    return "Correct"
+    return "Incorrect"
+print(is_valid_number(number))
