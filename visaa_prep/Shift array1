@@ -1,0 +1,4 @@
+=int(input())
+arr=list(map(int, input().split()))
+shift=arr[1:]+[arr[0]]
+print(" ".join(map(str, shift)))
