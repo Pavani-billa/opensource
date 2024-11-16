@@ -1,0 +1,4 @@
+x,n=map(int,input().split())
+planes = (n+99) // 100
+add_planes = planes - x
+print(add_planes)
