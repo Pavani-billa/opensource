@@ -1,0 +1,7 @@
+N=int(input().strip())
+matrix=[]
+for _ in range(N):
+    matrix.append(list(map(int, input().strip().split())))
+transpose = [[matrix[j][i] for j in range(N)] for i in range(N)]
+for row in transpose:
+    print(" ".join(map(str, row)))
